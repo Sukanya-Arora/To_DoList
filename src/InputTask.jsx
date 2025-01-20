@@ -47,17 +47,6 @@ export default function InputTask() {
         }
     }, [activityLog]);
 
-    // useEffect(() => {
-    //     const storedTodos= JSON.parse(localStorage.getItem("todos")) || [];
-    //     const storedActivityLog= JSON.parse(localStorage.getItem("activityLog")) || [];
-    //     setTodos(storedTodos);
-    //     setActivityLog(storedActivityLog);
-    // }, []);
-
-    // useEffect(() => {
-    //     localStorage.setItem("todos", JSON.stringify(todos));
-    //     localStorage.setItem("activityLog", JSON.stringify(activityLog));
-    // }, [todos, activityLog])
 
     const inputHandler= (event) => {
         setnewTodo(event.target.value);
