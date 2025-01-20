@@ -7,7 +7,7 @@ Delete Tasks: Remove completed or unnecessary tasks.
 Mark Tasks as Done: Visual indicators for completed tasks.
 Activity Log: Track all task-related activities (e.g., task added, completed).
 Persistent Data Storage: Tasks and activity logs are saved using localStorage, ensuring they remain available after refreshing the page.
-Responsive Design: Optimized for devices of 450px * 700px
+Responsive Design: Optimized for devices of min 450px and max 700px
 
 
 **Motivation**
