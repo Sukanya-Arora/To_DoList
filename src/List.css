@@ -1,0 +1,100 @@
+.listStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    width: 530px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 6px 6px 15px #e0e0e0;
+    color: #212121;
+    padding: 3px;
+    white-space: nowrap;
+}
+
+
+.contentStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 150px;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 100px;
+}
+
+.contentStyle li {
+    margin-bottom: 2px; /* Adds space between items */
+    list-style-type: none;
+}
+
+.btn {
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+    border: none; /* Ensure no borders */
+    background-color: transparent;
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+    margin-left: 150px;
+}
+
+.deleteButton {
+    opacity: 0;
+    transition: opacity 0.2 ease-out;
+}
+
+.listStyle:hover .deleteButton {
+    opacity: 1;
+    color: red; /* Change icon color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.editButton {
+    opacity: 0;
+    transition: transform 0.3 ease-in;
+}
+
+.listStyle:hover .editButton {
+    opacity: 1;
+    color: blue;
+    transform: scale(1.1);
+}
+
+.doneButton {
+    opacity: 0;
+    transition: transform 0.3 ease-in;
+}
+
+.listStyle:hover .doneButton {
+    opacity: 1;
+    color: green;
+    transform: scale(1.1);
+}
+
+@media screen and  (min-width: 450px) and (max-width:700px) {
+    .contentStyle {
+        margin-left: 0px;
+        justify-content: flex-start;
+    }
+
+    .listStyle {
+        width: 360px;
+        margin-left: 0px;
+    }
+
+    .btns {
+        gap: 5px;
+        margin-left: auto;
+    }
+
+    .mediaStyle h3, p {
+        text-align: center;
+        margin-left: 100px;
+        white-space: nowrap;
+    }
+}
